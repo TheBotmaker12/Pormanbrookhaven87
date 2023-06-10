@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Pormanbrookhaven87/main/Brookhaven'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Criminal X| Brookhaven",
    LoadingTitle = "The official script",
@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "CriminalX|Brookhaven Keysystem",
       Subtitle = "Made by @Porman",
@@ -59,4 +59,5 @@ local Button = Tab:CreateButton({
       
    end
 })
+
 
