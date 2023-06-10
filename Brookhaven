@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Pormanbrookhaven87/main/Brookhaven'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Criminal X| Brookhaven",
    LoadingTitle = "The official script",
@@ -24,6 +24,20 @@ local Window = Rayfield:CreateWindow({
       Key = {"Criminalx", "BrookhavenRelease2023"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+Rayfield:Notify({
+   Title = "Criminalx|Brookhaven",
+   Content = "Join the discord https://discord.gg/crimianlx",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
 
 local Tab = Window:CreateTab("Arceus x!")
 local Section = Tab:CreateSection("Arceus x UI")
@@ -46,18 +60,4 @@ local Button = Tab:CreateButton({
    end
 })
 
-Rayfield:Notify({
-   Title = "Criminal X| Brookhaven",
-   Content = "You have executed the script, Join the official discord https://discord.gg/criminalx",
-   Duration = 6.5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Yessir!",
-         Callback = function()
-         print("The user tapped Okay!")
-      end
-   },
-},
-})
 
